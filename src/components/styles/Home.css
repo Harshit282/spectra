@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    width: 100vw;
+    display: flex;
+    padding-bottom: 10vh;
+}
+.home .heading{
+    width: 100%;
+}
+.home .heading h1{
+    text-align: center;
+    font-size: 10rem;
+    padding: 40vh 0 9vh 0;
+    font-family: 'Great Vibes';
+    color: #647494;
+}
+.home .heading p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+}
+.home .particles{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+.home .particle{
+    z-index: -1;
+}
+/* ----------------------Responsiveness--------------------- */
+@media(max-width: 1050px){
+    .home .heading h1{
+        font-size: 7rem;
+    }
+    .home .heading p{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 550px){
+    .home .heading h1{
+        font-size: 5rem;
+    }
+}
+@media(max-width: 400px){
+    .home .heading h1{
+        font-size: 3.25rem;
+    }
+}

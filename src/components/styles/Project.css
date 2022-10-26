@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.project{
+    width: 100vw;
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    flex-direction: column;
+    padding: 5vh;
+}
+.project h1{
+    color: white;
+    font-size: 5rem;
+    margin: auto;
+    padding: 5vh 0;
+    margin-bottom: 10vh;
+    font-family: 'Roboto';
+}
+.project .projectContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project .projectContainer .projectSales, .projectTokenomics, .projectTaxes{
+    text-align: center;
+    border-radius: 20px;
+    width: 25vw;
+    background-color: #0c0064;
+    color: white;
+    padding: 2vh 2vw;
+}
+.project .projectContainer .projectSales h2, .projectTokenomics h2, .projectTaxes h2{
+    padding: 2vh 0 4vh 0;
+    font-family: 'Roboto';
+    color: rgb(255, 0, 0);
+}
+.project .projectContainer .projectSales p, .projectTokenomics p, .projectTaxes p{
+    padding-bottom: 1.5vh;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #647494;
+}
+
+.project .projectContainerContinued{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+.project .projectContainerContinued .projectCoreAdvisory, .projectMoreInfo{
+    text-align: center;
+    border-radius: 20px;
+    width: 25vw;
+    background-color: rgb(0, 47, 255);
+    color: white;
+    padding: 2vh 2vw;
+}
+.project .projectContainerContinued .projectCoreAdvisory p a{
+    text-decoration: none;
+    color: #647494;
+}
+.project .projectContainerContinued .projectCoreAdvisory h2, .projectMoreInfo h2{
+    padding: 2vh 0 4vh 0;
+    font-family: 'Roboto';
+    color: rgb(255, 0, 0);
+}
+.project .projectContainerContinued .projectCoreAdvisory p, .projectMoreInfo p{
+    padding-bottom: 1.5vh;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    color: #647494;
+}
+.project .projectContainerContinued .projectMoreInfo p{
+    font-family: "Poppins", sans-serif;
+}
+.project .cards:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-out;
+}
+.project .headings::after{
+    content: "";
+    width: 0%;
+    display: block;
+    margin: auto;
+    transition: all 1s ease;
+    margin-top: 0.5vh;
+}
+.project .cards:hover .headings::after{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+/* ----------------Responsiveness----------------- */
+@media(max-width: 1100px){
+    .project h1{
+        font-size: 4rem;
+    }
+    .project .projectContainerContinued .projectCoreAdvisory, .projectMoreInfo{
+        width: 40vw;
+    }
+}
+@media(max-width: 850px){
+    .project .projectContainer{
+        flex-direction: column;
+        margin: auto;
+    }
+    .project .projectContainerContinued{
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0;
+    }
+    .project .cards{
+        width: 50vw !important;
+        margin: 5vh 0;
+    }
+    .project .projectContainer .projectSales p, .projectTaxes p, .projectTokenomics p, .projectContainerContinued .projectCoreAdvisory p, .projectContainerContinued .projectMoreInfo p{
+        text-align: center !important;
+    }
+}
+@media(max-width: 600px){
+    .project{
+        padding: 5vh 2vh;
+    }
+    .project h1{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    .project .cards{
+        width: 70vw !important;
+        margin: 5vh 0;
+    }
+}
+@media(max-width: 450px){
+    .project .cards{
+        width: 90vw !important;
+    }
+    .project .cards p{
+        font-size: 0.8rem;
+    }
+}

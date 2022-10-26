@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about{
+    background-color: black;
+    color: white;
+    padding: 5vh;
+    width: 100vw;
+}
+.about .mainAbout{
+    text-align: center;
+}
+.about .mainAbout h1{
+    font-size: 5rem;
+    padding: 3vh;
+    color: #647494;
+    font-family: 'Roboto';
+    margin-bottom: 10vh;
+}
+.about .mainAbout p{
+    font-size: 1.5rem;
+    padding: 0 0 8vh 0; 
+    font-family: 'Poppins', sans-serif;
+}
+.about .firstInfo{
+    display: flex;
+    padding: 3vh 5vh 5vh 5vh;
+    position: relative;
+    margin-bottom: 10vh;
+}
+.about .firstInfo h1{
+    width: 30vw;
+    margin: auto;
+    font-size: 3rem;
+    font-family: 'Roboto'
+}
+.about .firstInfo p{
+    width: 70vw;
+    padding: 0 5vw;
+    font-family: 'Poppins', sans-serif;
+    color: #647494;
+}
+/* Style 2: */
+/* On Hover: Top and left border of after element and right, bottom borders of before element is */
+/* incresed from 0 to 10px */
+
+.about .firstInfo::after,
+.about .firstInfo::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+}
+
+.about .firstInfo::after{
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.about .firstInfo::before{
+    width: 0%;
+    height: 0%;
+    right: 0;
+    top: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.about .firstInfo:hover::before,
+.about .firstInfo:hover::after{
+    width: 50px;
+    height: 50px;
+    border-color: rgb(255, 255, 255);
+}
+/* --------------Responsiveness------------------ */
+@media(max-width: 1100px){
+    .about .mainAbout h1{
+        font-size: 4rem;
+    }
+    .about .mainAbout p{
+        font-size: 1.25rem;
+    }
+    .about .firstInfo h1{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 700px){
+    .about .firstInfo{
+        flex-direction: column;
+    }
+    .about .firstInfo h1{
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .about .firstInfo p{
+        width: 100%;
+        padding: 2.5vw;
+    }
+    .about .reverse{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 600px){
+    .about{
+        padding: 5vh 2vh;
+    }
+    .about .mainAbout h1{
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
+    }
+    .about .mainAbout p{
+        font-size: 1rem;
+    }
+    .about .firstInfo h1{
+        font-size: 1.75rem;
+    }
+    .about .firstInfo p{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 400px){
+    .about .firstInfo p{
+        padding: 0;
+    }
+}

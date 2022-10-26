@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.track{
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    padding: 5vh;
+}
+.track h1{
+    color: white;
+    font-size: 5rem;
+    margin: auto;
+    padding: 5vh 0;
+    font-family: "Roboto";
+    margin-bottom: 10vh;
+}
+.track .trackTokenDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.track .trackTokenDiv .trackBSCScan, .trackCMC, .trackCGK{
+    width: 20vw;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(112, 16, 88, 0.603);
+    border-radius: 25px;
+}
+.track .trackTokenDiv .trackBSCScan a, .trackCMC a, .trackCGK a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+}
+.track .trackTokenDivContinued{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(112, 16, 88, 0.603);
+    margin: 10vh;
+    border-radius: 25px;
+    padding: 3vh;
+    max-width: 60vw;
+    margin-left: 17vw;
+}
+.track .trackTokenDivContinued .trackCirculatingToken, .trackDeveloperHoldings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.track .trackTokenDivContinued .trackCirculatingToken h2, .trackDeveloperHoldings h2{
+    font-size: 2rem;
+    color: white;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-family: "Roboto";
+}
+.track .trackTokenDivContinued .trackCirculatingToken p, .trackDeveloperHoldings p{
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 3vh;
+    font-family: "Poppins", sans-serif;
+}
+.track .cards:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-out;
+}
+/* --------------Responsiveness------------------ */
+@media(max-width: 1100px){
+    .track h1{
+        font-size: 4rem;
+    }
+    .track .trackTokenDivContinued{
+        max-width: 100%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .track .trackTokenDivContinued .trackDeveloperHoldings{
+        margin-left: 20vw;
+    }
+}
+@media(max-width: 900px){
+    .track .trackBSCScan, .trackCMC, .trackCGK{
+        width: 30vw;
+    }
+}
+@media(max-width: 600px){
+    .track{
+        padding: 5vh 2vh;
+    }
+    .track h1{
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
+    }
+    .track .trackTokenDiv{
+        flex-direction: column;
+        margin: auto;
+    }
+    .track .trackTokenDiv .trackBSCScan, .trackCMC, .trackCGK{
+        width: 70vw;
+        margin-bottom: 5vh;
+    }
+    .track .trackTokenDivContinued .trackCirculatingToken h2, .trackDeveloperHoldings h2{
+        font-size: 1.75rem;
+    }
+    .track .trackTokenDivContinued .trackCirculatingToken p, .trackDeveloperHoldings p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 400px){
+    .track .trackTokenDiv .trackBSCScan, .trackCMC, .trackCGK{
+        width: 100%;
+    }
+    .track .trackTokenDivContinued{
+        flex-direction: column;
+        margin: auto;
+    }
+    .track .trackTokenDivContinued .trackDeveloperHoldings{
+        width: 100% !important;
+        margin: 0;
+    }
+}
+@media(max-width: 300px){
+    .track h1{
+        font-size: 2.25rem;
+    }
+}
