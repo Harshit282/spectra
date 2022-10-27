@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import './styles/About.css'
 
@@ -32,6 +33,18 @@ function About() {
                 </ul>
             </p>
         </div>
+        {/* <img className='img1 image' src='./Images/sqaure.jpg'></img>
+        <img className='img2 image' src='./Images/triangle.jpg'></img>
+        <img className='img3 image' src='./Images/circle.jpg'></img>
+        <img className='img4 image' src='./Images/sqaure.jpg'></img>
+        <img className='img5 image' src='./Images/triangle.jpg'></img>
+        <img className='img6 image' src='./Images/circle.jpg'></img>
+        <img className='img7 image' src='./Images/sqaure.jpg'></img>
+        <img className='img8 image' src='./Images/triangle.jpg'></img>
+        <img className='img9 image' src='./Images/circle.jpg'></img>
+        <img className='img10 image' src='./Images/sqaure.jpg'></img>
+        <img className='img11 image' src='./Images/triangle.jpg'></img>
+        <img className='img12 image' src='./Images/circle.jpg'></img> */}
     </div>
   )
 }

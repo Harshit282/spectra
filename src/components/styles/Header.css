@@ -37,7 +37,7 @@
     font-family: "Poppins", sans-serif;
 }
 .header .navbar .navIcons:hover{
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 .header .navbar .navIcons::after{
     content: "";
@@ -51,19 +51,134 @@
     height: 2px;
     background-color: rgb(255, 0, 0);
 }
+ul.sidebar.d__flex {
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+    position: fixed;
+    right: 0%;
+    background: black;
+    justify-content: center;
+    width: 250px;
+    top: 100px;
+    flex-direction: column;
+    list-style: none;
+    z-index: 10;
+}
+li.sideNavbar{
+    padding: 15px 30px;
+}
+li.sideNavbar a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    transition: color 1s;
+}
+li.sideNavbar a:hover{
+    color: rgb(255, 0, 0);
+}
+li.sideNavbar a::after{
+    content: "";
+    width: 0%;
+    display: block;
+    transition: all 1s ease;
+}
+li.sideNavbar a:hover::after{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+}
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+.hamburger {
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: none;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 7.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 27px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 27px;
+}
 
 /* ----------------------Responsiveness--------------------- */
 @media(max-width: 800px){
     .header .navbar .navIcons{
         display: none;
     }
+    .hamburger{
+        display: block;
+    }
 }
 @media(max-width: 400px){
+    .header{
+        padding: 5vh 2vh;
+    }
     .header .logo img{
         width: 3rem;
         height: 1.5rem;
     }
     .header .logo h1{
         font-size: 1.5rem;
+    }
+    .hamburger{
+        margin-top: 5px;
+    }
+    ul.sidebar.d__flex{
+        height: calc(100% - 90px);
+        top: 90px;
     }
 }

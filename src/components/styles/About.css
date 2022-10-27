@@ -80,6 +80,62 @@
     height: 50px;
     border-color: rgb(255, 255, 255);
 }
+/* .about .image{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #fff;
+}
+.about .img1{
+    top: 10%;
+    left: 10%
+}
+.about .img2{
+    top: 10%;
+    left: 10%
+}
+.about .img3{
+    top: 20%;
+    left: 10%
+}
+.about .img4{
+    top: 10%;
+    left: 20%
+}
+.about .img5{
+    top: 40%;
+    left: 35%
+}
+.about .img6{
+    top: 60%;
+    left: 10%
+}
+.about .img7{
+    top: 90%;
+    left: 15%
+}
+.about .img8{
+    top: 30%;
+    left: 60%
+}
+.about .img9{
+    top: 90%;
+    left: 85%
+}
+.about .img10{
+    top: 50%;
+    left: 75%
+}
+.about .img11{
+    top: 75%;
+    left: 45%
+}
+.about .img12{
+    top: 25%;
+    left: 95%
+} */
 /* --------------Responsiveness------------------ */
 @media(max-width: 1100px){
     .about .mainAbout h1{

@@ -7,6 +7,7 @@ import Project from './components/Project'
 import Track from './components/Track';
 import Exchanges from './components/Exchanges';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Project />
       <Track />
       {/* <Exchanges /> */}
+      <Contact />
       <Footer />
     </div>
   );

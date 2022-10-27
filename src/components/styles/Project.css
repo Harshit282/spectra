@@ -8,6 +8,11 @@
     background-color: rgb(24, 24, 24);
     flex-direction: column;
     padding: 5vh;
+    background-image: url(../../../public/Images/world\ map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .project h1{
     color: white;
