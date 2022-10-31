@@ -5,8 +5,13 @@ function Header() {
     const clicked = () => {
       const chkbox = document.getElementById("checkbox1")
       const sideBar = document.getElementById("sideBar");
-      sideBar.style.display = "none";
-      sideBar.style.display = chkbox.checked? "block" : "none";
+      if(window.innerWidth <= '800' && chkbox.checked){
+        sideBar.setAttribute('style', 'display:block');
+      }
+      else{
+        sideBar.setAttribute('style', 'display:none');
+      }
+      // sideBar.style.display = chkbox.checked? "block" : "none";
     }
   return (
     <>
@@ -45,8 +50,8 @@ function Header() {
             </label>
         </div>
       </div>
-      <div className="sideNavbar" id="sideBar">
-        <ul className="sidebar d__flex">
+      <div className="sideNavbar">
+        <ul className="sidebar d__flex" id='sideBar'>
           <li className="sideNavbar">
             <a href="#Home">Home</a>
           </li>
