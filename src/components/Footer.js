@@ -8,7 +8,7 @@ function Footer() {
             <div className='leftFooter'>
                 <div className='logocontent'>
                     <div className='logo'>
-                        <img src='./Images/images.jpeg' alt=''></img>
+                        <img src='./Images/logo2.jpeg' alt=''></img>
                     </div>
                     <div className='logoName'>
                         <h2>Spectra Labs</h2>
