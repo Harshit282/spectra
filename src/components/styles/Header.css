@@ -5,20 +5,24 @@
 .header{
     display: flex;
     background-color: black;
-    padding: 5vh 5vh;
+    padding: 0 5vh 5vh 5vh;
     width: 100vw;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
 }
+.header .logo h1, .navbar, .sideNavbar{
+    padding-top: 5vh;
+}
 .header .logo{
     display: flex;
 }
 .header .logo img{
-    width: 4rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     padding-right: 2vh;
+    margin-top: 4vh;
 }
 .header .logo h1{
     font-size: 2rem;

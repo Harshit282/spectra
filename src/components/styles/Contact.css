@@ -7,6 +7,11 @@
     color: white;
     padding: 5vh;
     width: 100vw;
+    background-image: url(../../../public/Images/worldmap2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
 }
 .contact h1{
     font-size: 3rem;

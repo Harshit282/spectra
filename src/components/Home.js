@@ -9,9 +9,15 @@ function Home() {
           <Particle />
           <div className='heading'>
             <h1>Spectra Labs</h1>
-            <p>World's first cryptocurrency project providing digital marketing solutions & faciliteies 
-              to all the the growing companies.</p>
+            <p>A Spectrum of Innovations</p>
+            <div className='contract'>
+              Copy Contract Address
+            </div>
+            <div className='buyNow'>
+              Buy on PancakeSwap
+            </div>
           </div>
+          <img src='./Images/mockup.png' alt=''></img>
         </div>
       </div>
     )

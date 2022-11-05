@@ -11,13 +11,12 @@ function Header() {
       else{
         sideBar.setAttribute('style', 'display:none');
       }
-      // sideBar.style.display = chkbox.checked? "block" : "none";
     }
   return (
     <>
       <div className="header">
         <div className="logo">
-          <img src="/Images/images.jpeg" alt=""></img>
+          <img src="/Images/logo2.jpg" alt=""></img>
           <h1>Spectra Labs</h1>
         </div>
         <div className="navbar">

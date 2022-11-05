@@ -5,23 +5,37 @@
 .home{
     width: 100vw;
     display: flex;
-    padding-bottom: 10vh;
+    padding-bottom: 30vh;
+    padding-left: 4vw;
 }
 .home .heading{
-    width: 100%;
+    width: 60%;
+}
+.home img{
+    width: 50vw;
+    height: 100vh;
+    padding: 10vh 5vh 0 5vh;
 }
 .home .heading h1{
-    text-align: center;
-    font-size: 10rem;
-    padding: 40vh 0 9vh 0;
-    font-family: 'Great Vibes';
+    font-size: 5rem;
+    padding: 40vh 0 2vh 0;
+    font-family: 'Roboto';
     color: #647494;
 }
 .home .heading p{
     color: white;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: "Poppins";
+}
+.home .contract, .buyNow{
+    padding: 2.5vh;
+    background-color: rgb(182, 55, 55);
+    color: white;
+    border-radius: 35px;
+    width: 50vh;
+    font-family: "Poppins",sans-serif;
+    margin-top: 5vh;
+    text-align: center;
 }
 .home .particles{
     position: absolute;
@@ -33,21 +47,52 @@
     z-index: -1;
 }
 /* ----------------------Responsiveness--------------------- */
-@media(max-width: 1050px){
-    .home .heading h1{
-        font-size: 7rem;
-    }
-    .home .heading p{
-        font-size: 1rem;
+@media(max-width: 750px){
+    .home img{
+        margin-top: 20vh;
+        width: 50vw;
+        height: 70vh;
     }
 }
-@media(max-width: 550px){
+@media(max-width: 600px){
+    .home{
+        flex-direction: column;
+    }
+    .home .heading{
+        width: 100%;
+    }
     .home .heading h1{
-        font-size: 5rem;
+        padding: 30vh 5vh 0 0;
+    }
+    .home img{
+        padding: 5vh 0 0 0 ;
+        margin-top: 10vh;
+        margin: auto;
+        width: 70vw;
+        height: 70vh;
+    }
+}
+@media(max-width: 450px){
+    .home .heading h1{
+        font-size: 3.75rem;
+        padding-left: 2.5vh;
+    }
+    .home .heading p{
+        font-size: 2rem;
+        padding-left: 2.5vh;
+    }
+    .home .contract, .buyNow{
+        width: 90%;
+        margin-top: 2.5vh;
     }
 }
 @media(max-width: 400px){
     .home .heading h1{
-        font-size: 3.25rem;
+        font-size: 3rem;
+        padding-left: 0;        
+    }
+    .home .heading p{
+        font-size: 1.25rem;
+        padding-left: 0;
     }
 }

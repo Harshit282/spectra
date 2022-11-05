@@ -27,7 +27,7 @@ function Exchanges() {
     autoplay : true,
     autoplaySpeed : 1000,
     initialSlide : 5,
-    dots : true,
+    dots : false,
     infinite : true,
     dotsClass : 'slick-dots dots',
     prevArrow : <Prevbtn/>,
@@ -36,48 +36,33 @@ function Exchanges() {
   return (
     <div className='exchanges' id='Exchanges'>
         <h1>Exchanges</h1>
-       <Slider { ...settings }>
-       <div className="h1 h">
-            <div className="homecontent">
-              <h5>JOURNEY</h5>
-              <h1>Your Dream Vacation</h1>
-              <p>The best way to enjoy the life is to explore this wide world. Let's find some beautiful place to get lost.</p>
-              <button>Learn More</button>
-            </div>
+      <Slider { ...settings }>
+        <div className="h1 h">
+          <div className="homecontent">
+            <img src='./Images/binance.png' alt=''></img>
           </div>
-          <div className="h2 h">
-            <div className="homecontent">
-              <h5>ENJOY</h5>
-              <h1>Feel Good Places</h1>
-              <p>The best way to enjoy the life is to explore this wide world. Let's find some beautiful place to get lost.</p>
-              <button>Learn More</button>
-            </div>
+        </div>
+        <div className="h2 h">
+          <div className="homecontent">
+            <img src='./Images/wazirx.jpg' alt=''></img>
           </div>
-          <div className="h3 h">
-            <div className="homecontent">
-              <h5>GREAT EXPERIENCE</h5>
-              <h1>Exploring The World</h1>
-              <p>The best way to enjoy the life is to explore this wide world. Let's find some beautiful place to get lost.</p>
-              <button>Learn More</button>
-            </div>
+        </div>
+        <div className="h3 h">
+          <div className="homecontent">
+            <img src='./Images/cmc.png' alt=''></img>
           </div>
-          <div className="h4 h">
-            <div className="homecontent">
-              <h5>WHAT NEXT COUNTRY?</h5>
-              <h1>Discover Night Francisco</h1>
-              <p>The best way to enjoy the life is to explore this wide world. Let's find some beautiful place to get lost.</p>
-              <button>Learn More</button>
-            </div>
+        </div>
+        <div className="h4 h">
+          <div className="homecontent">
+            <img src='./Images/wazirx.jpg' alt=''></img>
           </div>
-          <div className="h5 h">
-            <div className="homecontent">
-              <h5>UNIMAGINABLE</h5>
-              <h1>So Get Ready</h1>
-              <p>The best way to enjoy the life is to explore this wide world. Let's find some beautiful place to get lost.</p>
-              <button>Learn More</button>
-            </div>
-          </div>
-       </Slider>
+        </div>
+        <div className="h5 h">
+          <div className="homecontent">
+          <img src='./Images/bitmart.png' alt=''></img>
+          </div>  
+        </div>
+      </Slider>
     </div>
   )
 }

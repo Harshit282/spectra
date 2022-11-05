@@ -15,6 +15,7 @@
     margin: auto;
     padding: 5vh 0;
     font-family: "Roboto";
+    margin-bottom: 20vh;
 }
 .dots{
     bottom: 20px !important;
@@ -57,54 +58,20 @@
 /* ------------------------------------------------- quote ----------------------------------------------------- */
 .homecontent{
     width: 859px;
-    margin-top: 25vh;
     padding: 1rem 1rem 1rem 14vw;
     color: white;
     animation: zoomIn;
     animation-duration: 1s;
 }
-
-.homecontent h5{
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.419);
+.homecontent img{
+    width: 30vw;
 }
-
-.homecontent h1{
-    margin-bottom: 1.5rem;
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.221);
-    font-weight: 400;
+/* ------------------Responsiveness---------------- */
+@media(max-width: 1100px){
+    .exchanges h1{
+        font-size: 4rem;
+    }
 }
-
-.homecontent p{
-    margin-bottom: 2.5rem;
-    font-size: 1.3rem;
-    word-spacing: 0.2rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.419);
-}
-
-.homecontent button{
-    padding: 0.7rem 1.7rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background-color: white;
-    transition: all 0.4s;
-}
-
-.homecontent button:hover{
-    /* background-color: rgba(255, 255, 255, 0.695); */
-    background-color: red;
-    animation: rubberBand;
-    animation-duration: 1s;
-    color: white;
-}
-
-
-
 /* ------------------------------------------------- media queries ----------------------------------------------------- */
 @media ( max-width: 900px ) {
     .slick-prev{
@@ -118,15 +85,6 @@
     }
     .homecontent{
         width: 750px;
-    }
-    .homecontent h1{
-        font-size: 3rem;
-    }
-    .homecontent p{
-        font-size: 1.2rem;
-    }
-    .homecontent button{
-        font-size: 1.2rem;
     }
 }
 
@@ -146,14 +104,15 @@
         width: 550px;
         padding-left: 12vw;
     }
-    .homecontent h1{
+}
+
+@media(max-width: 600px){
+    .exchanges{
+        padding: 5vh 2vh;
+    }
+    .exchanges h1{
         font-size: 2.5rem;
-    }
-    .homecontent p{
-        font-size: 1.1rem;
-    }
-    .homecontent button{
-        font-size: 1.1rem;
+        margin-bottom: 0;
     }
 }
 
@@ -173,18 +132,5 @@
         width: 450px;
         padding-left: 10vw;
         margin-top: 29vh;
-    }
-    .homecontent h5{
-        font-size: 0.7rem;
-    }
-    .homecontent h1{
-        font-size: 2rem;
-    }
-    .homecontent p{
-        font-size: 1rem;
-    }
-    .homecontent button{
-        font-size: 1rem;
-        padding: 0.5rem 0.9rem;
     }
 }
