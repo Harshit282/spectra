@@ -9,12 +9,16 @@
     padding-left: 4vw;
 }
 .home .heading{
-    width: 60%;
+    width: 55%;
 }
-.home img{
-    width: 50vw;
-    height: 100vh;
-    padding: 10vh 5vh 0 5vh;
+.home .imageDiv{
+    margin-top: 20vh;
+    background-image: url("../../../public/Images/mockup.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40rem;
+    height: 45rem;
 }
 .home .heading h1{
     font-size: 5rem;
@@ -47,29 +51,34 @@
     z-index: -1;
 }
 /* ----------------------Responsiveness--------------------- */
-@media(max-width: 750px){
-    .home img{
-        margin-top: 20vh;
-        width: 50vw;
-        height: 70vh;
+@media(max-width: 1050px){
+    .home .imageDiv{
+        margin-top: 30vh;
+    }
+}
+@media(max-width: 920px){
+    .home{
+        flex-direction: column;
+        padding-bottom: 5vh;
+    }
+    .home .imageDiv{
+        margin: auto;
+    }
+}
+@media(max-width: 680px){
+    .home .imageDiv{
+        width: 90vw;
     }
 }
 @media(max-width: 600px){
-    .home{
-        flex-direction: column;
-    }
     .home .heading{
         width: 100%;
     }
     .home .heading h1{
         padding: 30vh 5vh 0 0;
     }
-    .home img{
-        padding: 5vh 0 0 0 ;
-        margin-top: 10vh;
-        margin: auto;
-        width: 70vw;
-        height: 70vh;
+    .home .contract, .buyNow{
+        width: 80vw;
     }
 }
 @media(max-width: 450px){

@@ -17,7 +17,9 @@ function Home() {
               Buy on PancakeSwap
             </div>
           </div>
-          <img src='./Images/mockup.png' alt=''></img>
+          <div className='imageDiv'>
+            {/* <img src='./Images/mockup.png' alt=''></img> */}
+          </div>
         </div>
       </div>
     )
