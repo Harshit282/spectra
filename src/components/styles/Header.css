@@ -5,21 +5,21 @@
 .header{
     display: flex;
     background-color: black;
-    padding: 0 5vh 3vh 5vh;
+    padding: 0 0 3vh 5vh;
     width: 100vw;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
 }
 .header .logo h1, .navbar, .sideNavbar{
-    padding-top: 5vh;
+    padding-top: 4vh;
 }
 .header .logo{
     display: flex;
 }
 .header .logo img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     padding-right: 2vh;
     margin-top: 4vh;
@@ -35,7 +35,7 @@
 .header .navbar .navIcons{
     text-decoration: none;
     color: white;
-    padding: 1rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     margin-right: 2rem;
     transition: color 1s;
     font-family: "Poppins", sans-serif;
@@ -161,7 +161,21 @@ li.sideNavbar a:hover::after{
 }
 
 /* ----------------------Responsiveness--------------------- */
+@media(max-width: 920px){
+    .header{
+        padding-left: 3vh;
+    }
+    .header .logo img{
+        padding-right: 1vh;
+    }
+    .header .navbar .navIcons{
+        margin-right: 1.5rem;
+    }
+}
 @media(max-width: 800px){
+    .header{
+        padding-right: 5vh;
+    }
     .header .navbar .navIcons{
         display: none;
     }
