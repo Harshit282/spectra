@@ -26,7 +26,7 @@
 }
 .header .logo h1{
     font-size: 2rem;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Roboto';
     color: #647494;
 }
 .header .navbar{
@@ -39,6 +39,7 @@
     margin-right: 2rem;
     transition: color 1s;
     font-family: "Poppins", sans-serif;
+    font-size: 1.15rem;
 }
 .header .navbar .navIcons:hover{
     color: rgb(255, 0, 0);

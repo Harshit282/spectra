@@ -18,7 +18,7 @@ function Home() {
             </div>
           </div>
           <div className='imageDiv'>
-            {/* <img src='./Images/mockup.png' alt=''></img> */}
+            {/* ---------------- */}
           </div>
         </div>
       </div>

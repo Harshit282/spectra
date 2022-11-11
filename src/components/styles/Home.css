@@ -32,12 +32,13 @@
     font-family: "Poppins";
 }
 .home .contract, .buyNow{
-    padding: 2.5vh;
+    padding: 1.5rem;
     background-color: rgb(182, 55, 55);
     color: white;
     border-radius: 35px;
     width: 50vh;
     font-family: "Poppins",sans-serif;
+    font-size: 1.15rem;
     margin-top: 5vh;
     text-align: center;
 }
@@ -60,6 +61,9 @@
     .home{
         flex-direction: column;
         padding-bottom: 5vh;
+    }
+    .home .heading h1, .home .heading p{
+        width: 80vw;
     }
     .home .imageDiv{
         margin: auto;
