@@ -161,6 +161,11 @@ li.sideNavbar a:hover::after{
 }
 
 /* ----------------------Responsiveness--------------------- */
+@media(max-height: 1050px){
+    .header .logo img{
+        width: 4rem;
+    }
+}
 @media(max-width: 920px){
     .header{
         padding-left: 3vh;
