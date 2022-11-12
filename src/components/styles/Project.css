@@ -22,103 +22,77 @@
     margin-bottom: 10vh;
     font-family: 'Roboto';
 }
-.project .projectContainer{
+/* ---------------------------------- */
+.cardsContainer{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.project .projectContainer .projectSales, .projectTokenomics, .projectTaxes{
-    text-align: center;
-    border-radius: 20px;
-    width: 25vw;
-    background-color: #0c0064;
-    color: white;
-    padding: 2vh 2vw;
+.container{
+    perspective: 1000px;
+    height: 25rem;
+    width: 25rem;
+    cursor: pointer;
+    margin: 2rem;
 }
-.project .projectContainer .projectSales h2, .projectTokenomics h2, .projectTaxes h2{
-    padding: 2vh 0 4vh 0;
-    font-family: 'Roboto';
-    color: rgb(255, 0, 0);
+.card {
+transform-style: preserve-3d;
+height: 100%;
+width: 100%;
+transition: 0.5s ease;
 }
-.project .projectContainer .projectSales p, .projectTokenomics p, .projectTaxes p{
-    padding-bottom: 1.5vh;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    color: #647494;
+.front,
+.back {
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+border-radius: 0.4em;
+position: absolute;
+top: 0;
+bottom: 0;
+backface-visibility: hidden;
 }
-
-.project .projectContainerContinued{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10vh;
+.front {
+background: linear-gradient(to right, #a246ef, #6523fe);
 }
-.project .projectContainerContinued .projectCoreAdvisory, .projectMoreInfo{
-    text-align: center;
-    border-radius: 20px;
-    width: 25vw;
-    background-color: rgb(0, 47, 255);
-    color: white;
-    padding: 2vh 2vw;
+.front img {
+width: 5em;
 }
-.project .projectContainerContinued .projectCoreAdvisory p a{
+.content {
+transform: translateZ(60px);
+}
+.content h2 {
+font-size: 22px;
+margin-top: 1em;
+font-weight: 600;
+letter-spacing: 0.04em;
+}
+.content p {
+font-size: 14px;
+line-height: 2em;
+letter-spacing: 0.02em;
+padding: 0 3em;
+}
+.content p a{
     text-decoration: none;
-    color: #647494;
+    color: rgba(255, 0, 212, 0.527);
 }
-.project .projectContainerContinued .projectCoreAdvisory h2, .projectMoreInfo h2{
-    padding: 2vh 0 4vh 0;
-    font-family: 'Roboto';
-    color: rgb(255, 0, 0);
+.back {
+background-color: #28253a;
+transform: rotateX(180deg);
 }
-.project .projectContainerContinued .projectCoreAdvisory p, .projectMoreInfo p{
-    padding-bottom: 1.5vh;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
-    color: #647494;
+.container:hover .card {
+transform: rotateX(180deg);
 }
-.project .projectContainerContinued .projectMoreInfo p{
-    font-family: "Poppins", sans-serif;
-}
-.project .cards:hover{
-    transform: scale(1.05);
-    transition: all 1s ease-out;
-}
-.project .headings::after{
-    content: "";
-    width: 0%;
-    display: block;
-    margin: auto;
-    transition: all 1s ease;
-    margin-top: 0.5vh;
-}
-.project .cards:hover .headings::after{
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-}
-/* ----------------Responsiveness----------------- */
+/* -----------------Responsiveness------------------ */
 @media(max-width: 1100px){
     .project h1{
         font-size: 4rem;
-    }
-    .project .projectContainerContinued .projectCoreAdvisory, .projectMoreInfo{
-        width: 40vw;
-    }
-}
-@media(max-width: 850px){
-    .project .projectContainer{
-        flex-direction: column;
-        margin: auto;
-    }
-    .project .projectContainerContinued{
-        flex-direction: column;
-        margin: auto;
-        margin-top: 0;
-    }
-    .project .cards{
-        width: 50vw !important;
-        margin: 5vh 0;
-    }
-    .project .projectContainer .projectSales p, .projectTaxes p, .projectTokenomics p, .projectContainerContinued .projectCoreAdvisory p, .projectContainerContinued .projectMoreInfo p{
-        text-align: center !important;
     }
 }
 @media(max-width: 600px){
@@ -129,16 +103,18 @@
         font-size: 2.5rem;
         margin-bottom: 0;
     }
-    .project .cards{
-        width: 70vw !important;
-        margin: 5vh 0;
+}
+@media(max-width: 500px){
+    .container{
+        width: 100vw;
+        margin: 2rem 0;
     }
 }
-@media(max-width: 450px){
-    .project .cards{
-        width: 90vw !important;
+@media(max-width: 370px){
+    .project{
+        padding: 5vw;
     }
-    .project .cards p{
-        font-size: 0.8rem;
+    .content p{
+        padding: 0 1em;
     }
 }

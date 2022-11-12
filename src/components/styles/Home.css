@@ -81,7 +81,7 @@
         padding: 30vh 5vh 0 0;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 500px){
     .home .heading h1{
         font-size: 3.75rem;
         padding-left: 2.5vh;
