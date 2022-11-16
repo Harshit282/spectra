@@ -16,7 +16,7 @@ function Header() {
     <>
       <div className="header">
         <div className="logo">
-          <img src="/Images/logo2.jpg" alt=""></img>
+          <img src="/Images/logo2.png" alt=""></img>
           <h1>Spectra Labs</h1>
         </div>
         <div className="navbar">

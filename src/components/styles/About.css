@@ -3,13 +3,12 @@
     padding: 0;
 }
 .about{
-    background-color: black;
-    background-image: url(../../../public/Images/bg2.png);
-    background-size: cover;
+    background-color: var(--secondary-bg-color);
+    /* background-image: url(../../../public/Images/bg2.png); */
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
-    color: white;
+    background-attachment: fixed; */
     padding: 5vh;
     width: 100vw;
 }
@@ -19,7 +18,7 @@
 .about .mainAbout h1{
     font-size: 5rem;
     padding: 3vh;
-    color: #647494;
+    color: var(--heading-color);
     font-family: 'Roboto';
     margin-bottom: 10vh;
 }
@@ -38,13 +37,14 @@
     width: 30vw;
     margin: auto;
     font-size: 3rem;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    color: var(--secondary-heading-color);
 }
 .about .firstInfo p{
     width: 70vw;
     padding: 0 5vw;
     font-family: 'Poppins', sans-serif;
-    color: #647494;
+    color: var(--text-color);
 }
 /* Style 2: */
 /* On Hover: Top and left border of after element and right, bottom borders of before element is */
@@ -83,64 +83,8 @@
 .about .firstInfo:hover::after{
     width: 50px;
     height: 50px;
-    border-color: rgb(255, 255, 255);
+    border-color: var(--hover-color);
 }
-/* .about .image{
-    width: 35px;
-    height: 35px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: absolute;
-    background-color: #fff;
-}
-.about .img1{
-    top: 10%;
-    left: 10%
-}
-.about .img2{
-    top: 10%;
-    left: 10%
-}
-.about .img3{
-    top: 20%;
-    left: 10%
-}
-.about .img4{
-    top: 10%;
-    left: 20%
-}
-.about .img5{
-    top: 40%;
-    left: 35%
-}
-.about .img6{
-    top: 60%;
-    left: 10%
-}
-.about .img7{
-    top: 90%;
-    left: 15%
-}
-.about .img8{
-    top: 30%;
-    left: 60%
-}
-.about .img9{
-    top: 90%;
-    left: 85%
-}
-.about .img10{
-    top: 50%;
-    left: 75%
-}
-.about .img11{
-    top: 75%;
-    left: 45%
-}
-.about .img12{
-    top: 25%;
-    left: 95%
-} */
 /* --------------Responsiveness------------------ */
 @media(max-width: 1100px){
     .about .mainAbout h1{

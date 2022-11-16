@@ -24,22 +24,29 @@
     font-size: 5rem;
     padding: 40vh 0 2vh 0;
     font-family: 'Roboto';
-    color: #647494;
+    color: var(--logo-color);
 }
 .home .heading p{
-    color: white;
+    color: var(--input-color);
     font-size: 2.5rem;
     font-family: "Poppins";
 }
 .home .contract, .buyNow{
     padding: 1.5rem;
-    background-color: rgb(182, 55, 55);
-    color: white;
+    background-color: #F9004D;
+    color: var(--input-color);
     border-radius: 35px;
     width: 30rem;
     font-family: "Poppins",sans-serif;
     margin-top: 5vh;
     text-align: center;
+    border: 2px solid #fff;
+}
+.home .contract:hover, .buyNow:hover{
+    background-color: #fff;
+    color: #F9004D;
+    transition: all 0.5s ease-out;
+    border: 2px solid #F9004D;
 }
 .home .particles{
     position: absolute;

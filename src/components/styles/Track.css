@@ -5,12 +5,12 @@
 .track{
     width: 100vw;
     display: flex;
-    background-color: black;
+    background-color: var(--secondary-bg-color);
     flex-direction: column;
     padding: 5vh;
 }
 .track h1{
-    color: white;
+    color: var(--heading-color);
     font-size: 5rem;
     margin: auto;
     padding: 5vh 0;
@@ -26,18 +26,18 @@
     font-size: 1.5rem;
     padding: 2rem;
     text-align: center;
-    background-color: rgba(112, 16, 88, 0.603);
+    background-color: var(--hover-color);
     border-radius: 25px;
 }
 .track .trackTokenDiv .trackBSCScan a, .trackCMC a, .trackCGK a{
     text-decoration: none;
-    color: white;
+    color: var(--input-color);
     font-family: "Roboto";
 }
 .track .trackTokenDivContinued{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(112, 16, 88, 0.603);
+    background-color: var(--hover-color);
     margin: 10vh;
     border-radius: 25px;
     padding: 3vh;
@@ -51,14 +51,14 @@
 }
 .track .trackTokenDivContinued .trackCirculatingToken h2, .trackDeveloperHoldings h2{
     font-size: 2rem;
-    color: white;
+    color: var(--input-color);
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-family: "Roboto";
 }
 .track .trackTokenDivContinued .trackCirculatingToken p, .trackDeveloperHoldings p{
     font-size: 2rem;
-    color: white;
+    color: var(--input-color);
     padding-bottom: 3vh;
     font-family: "Poppins", sans-serif;
 }

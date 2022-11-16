@@ -3,45 +3,19 @@
     padding: 0;
 }
 .contact{
-    background-color: rgb(29, 29, 29);
-    color: white;
+    background-color: var(--bg-color);
     padding: 5vh;
     width: 100vw;
     background-image: url(../../../public/Images/worldmap2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-attachment: fixed; */
 }
 .contact h1{
     font-size: 3rem;
     padding: 3vh 0;
-    color: white;
+    color: var(--heading-color);
     font-family: 'Roboto';
-}
-.contact .chooseOption{
-    display: flex;
-}
-.contact .chooseOption p{
-    font-family: "Poppins", sans-serif;
-    margin-right: 5vw; 
-}
-.contact .chooseOption p:hover{
-    cursor:default;
-    color:rgb(255, 0, 0);
-    transition: all 1s ease-out;
-}
-.contact .chooseOption p::after{
-    content: "";
-    width: 0%;
-    display: block;
-    transition: all 1s ease;
-    margin-top: 0.5vh;
-}
-.contact .chooseOption p:hover::after{
-    width: 100%;
-    height: 2px;
-    background-color: rgb(255, 0, 0);
 }
 .contact .inputBox{
     display: flex;
@@ -52,7 +26,6 @@
     display: block;
     width: 100%;
     padding: 0 20px;
-    border: 2px solid rgba(0,0,0,.1);
     border-radius: 5px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
@@ -60,7 +33,7 @@
     line-height: 46px;
     margin: 20px 0px;
     outline: none;
-    color: #fff;
+    color: var(--input-color);
     font-size: 15px;
     letter-spacing: .1px;
     background: none;
@@ -73,7 +46,7 @@
     padding: 0 20px;
     width: 100%;
     line-height: 46px;
-    color: #fff;
+    color: var(--input-color);
     font-size: 15px;
     letter-spacing: .1px;
     border: 2px solid hsla(0,0%,100%,.2);
@@ -82,6 +55,7 @@
 .contact .inputBox .submit{
     padding: 10px;
     border: 2px solid hsla(0,0%,100%,.2);
+    color: rgba(255, 255, 255, 0.712);
     width: 7.5rem;
     text-align: center;
     margin-top: 5vh;
@@ -89,11 +63,11 @@
     font-family: "Poppins", sans-serif;
 }
 .contact .inputBox .submit:hover{
-    color: #fff;
-    background-color: rgb(255, 0, 0);
+    color: var(--input-color);
+    background-color: var(--hover-color);
     cursor: pointer;
     transition: all 0.5s ease-out;
-    border-color: whitesmoke;
+    border-color: var(--input-color);
 }
 /* ------------------Responsiveness------------------- */
 @media(max-width: 800px){

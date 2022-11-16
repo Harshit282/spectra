@@ -7,6 +7,16 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.App{
+  --bg-color: #000;
+  --secondary-bg-color: #000;
+  --text-color: rgba(198,201,216,.75);
+  --input-color: #ffffff;
+  --heading-color: #ffffff;
+  --secondary-heading-color: #F9004D;
+  --logo-color: #F9004D;
+  --hover-color: #F9004D;
+}
 ::-webkit-scrollbar{
   width: 0 !important;
 }
