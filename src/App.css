@@ -26,11 +26,11 @@
   opacity: 0;
   transition: 1s all ease;
 }
-
 .revealTop.active{
   transform: translateY(0);
   opacity: 1;
 }
+
 .revealLeft{
   position: relative;
   transform: translateX(-150px);
@@ -41,6 +41,7 @@
   transform: translateX(0);
   opacity: 1;
 }
+
 .revealRight{
   position: relative;
   transform: translateX(150px);
@@ -53,7 +54,10 @@
 }
 /* ---------------Responsiveness--------------------- */
 @media(max-width: 1000px){
-  .revealRight{
-    transform: translateX(-150px);
+  .revealRight, .revealLeft{
+    transform: translateY(150px);
+  }
+  .revealRight.active, .revealLeft.active{
+    transform: translateY(0);
   }
 }
