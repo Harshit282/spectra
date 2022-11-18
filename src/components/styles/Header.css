@@ -11,6 +11,10 @@
     justify-content: space-between;
     position: fixed;
     z-index: 10;
+    transition: all 0.5s ease-out;
+}
+#Header.hide{
+    transform: translateY(-100px);
 }
 .header .logo h1, .navbar, .sideNavbar{
     padding-top: 4vh;
@@ -176,6 +180,9 @@ li.sideNavbar a:hover::after{
     }
     .hamburger{
         display: block;
+    }
+    #Header.hide{
+        transform: translateY(0);
     }
 }
 @media(max-width: 920px){
