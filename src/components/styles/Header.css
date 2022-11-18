@@ -170,6 +170,9 @@ li.sideNavbar a:hover::after{
     .header .logo img{
         width: 4rem;
     }
+    .header .navbar .navIcons{
+        margin-right: 1.5rem;
+    }
 }
 @media(max-width: 1000px){
     .header{
@@ -177,6 +180,7 @@ li.sideNavbar a:hover::after{
     }
     .header .navbar .navIcons{
         display: none;
+        margin-right: 1.5rem;
     }
     .hamburger{
         display: block;

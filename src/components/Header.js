@@ -26,7 +26,6 @@ function Header() {
       var header = document.getElementById('Header');
     
       var checkScroll = function() {
-    
         /*
         ** Find the direction of scroll
         ** 0 - initial, 1 - up, 2 - down
