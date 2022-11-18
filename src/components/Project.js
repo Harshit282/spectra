@@ -4,11 +4,11 @@ import './styles/Project.css'
 function Project() {
   return (
     <div className='project' id='Project'>
-        <h1>Project Info</h1> 
+        <h1 className='revealTop'>Project Info</h1> 
 
         <div className='cardsContainer'>
 
-          <div class="container">
+          <div class="container revealLeft">
             <div class="card">
               <div class="front">
                 <div class="content">
@@ -28,7 +28,7 @@ function Project() {
           </div>
 
 
-        <div class="container">
+        <div class="container revealRight">
           <div class="card">
             <div class="front">
               <div class="content">
@@ -48,7 +48,7 @@ function Project() {
         </div>
         
         
-        <div class="container">
+        <div class="container revealLeft">
           <div class="card">
             <div class="front">
               <div class="content">
@@ -69,7 +69,7 @@ function Project() {
         </div>
 
 
-        <div class="container">
+        <div class="container revealRight">
         <div class="card">
           <div class="front">
             <div class="content">
@@ -90,7 +90,7 @@ function Project() {
           </div>
         </div>
       </div>
-        <div class="container">
+        <div class="container revealLeft">
         <div class="card">
           <div class="front">
             <div class="content">

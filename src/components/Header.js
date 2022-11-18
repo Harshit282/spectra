@@ -5,7 +5,7 @@ function Header() {
     const clicked = () => {
       const chkbox = document.getElementById("checkbox1")
       const sideBar = document.getElementById("sideBar");
-      if(window.innerWidth <= '800' && chkbox.checked){
+      if(window.innerWidth <= '1000' && chkbox.checked){
         sideBar.setAttribute('style', 'display:block');
       }
       else{
@@ -32,19 +32,22 @@ function Header() {
           <a href="#Track" className="navIcons">
           Track
           </a>
+          <a href="#Roadmap" className="navIcons">
+          Roadmap
+          </a>
           <a href="#Exchanges" className="navIcons">
           Exchanges
           </a>
           <a href="#Contact" className="navIcons">
           Contact
           </a>
-          <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" onClick={clicked}/>
+          <input type="checkbox" id="checkbox1" className="checkbox1 visuallyHidden" onClick={clicked}/>
             <label for="checkbox1">
-              <div class="hamburger hamburger1">
-                  <span class="bar bar1"></span>
-                  <span class="bar bar2"></span>
-                  <span class="bar bar3"></span>
-                  <span class="bar bar4"></span>
+              <div className="hamburger hamburger1">
+                  <span className="bar bar1"></span>
+                  <span className="bar bar2"></span>
+                  <span className="bar bar3"></span>
+                  <span className="bar bar4"></span>
               </div>
             </label>
         </div>
@@ -62,6 +65,9 @@ function Header() {
           </li>
           <li className="sideNavbar">
             <a href="#Track">Track</a>
+          </li>
+          <li className="sideNavbar">
+            <a href="#Roadmap">Roadmap</a>
           </li>
           <li className="sideNavbar">
             <a href="#Exchanges">Exchanges</a>

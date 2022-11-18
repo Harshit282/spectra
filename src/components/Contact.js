@@ -5,7 +5,7 @@ import UserContact from "./UserContact";
 function Contact() {
     return (
     <div className="contact" id="Contact">
-        <h1>Connect with us:</h1>
+        <h1 className="revealTop">Connect with us:</h1>
         <UserContact id='User' />
     </div>
     );

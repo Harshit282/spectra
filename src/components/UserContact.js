@@ -5,25 +5,26 @@ function UserContact() {
         <div className="inputBox">
             <input
                 type="text"
-                className="contactInput name"
+                className="contactInput name revealLeft"
                 placeholder="Your name *"
             />
             <input
                 type="text"
-                className="contactInput email"
+                className="contactInput email revealLeft"
                 placeholder="Your Email *"
             />
             <input
                     type="text"
-                    className="contactInput subject"
+                    className="contactInput subject revealLeft"
                     placeholder="Write a Subject"
             />
             <textarea
                 name="message"
                 id="message"
                 placeholder="Write Your message"
+                className='revealLeft'
             ></textarea>
-            <div className="submit">
+            <div className="submit revealTop">
                 Submit
             </div>
         </div>

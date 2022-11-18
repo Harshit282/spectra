@@ -35,7 +35,7 @@ function Exchanges() {
   }
   return (
     <div className='exchanges' id='Exchanges'>
-        <h1>Exchanges</h1>
+        <h1 className='revealTop'>Exchanges</h1>
       <Slider { ...settings }>
         <div className="h1 h">
           <div className="homecontent">

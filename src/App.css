@@ -20,3 +20,35 @@
 ::-webkit-scrollbar{
   width: 0 !important;
 }
+.revealTop{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealTop.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealLeft{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealLeft.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealRight{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.revealRight.active{
+  transform: translateX(0);
+  opacity: 1;
+}
