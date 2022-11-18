@@ -2,29 +2,28 @@ import React from 'react'
 
 function UserContact() {
     return (
-        <div className="inputBox">
+        <div className="inputBox revealTop">
             <input
                 type="text"
-                className="contactInput name revealLeft"
+                className="contactInput name"
                 placeholder="Your name *"
             />
             <input
                 type="text"
-                className="contactInput email revealLeft"
+                className="contactInput email"
                 placeholder="Your Email *"
             />
             <input
                     type="text"
-                    className="contactInput subject revealLeft"
+                    className="contactInput subject"
                     placeholder="Write a Subject"
             />
             <textarea
                 name="message"
                 id="message"
                 placeholder="Write Your message"
-                className='revealLeft'
             ></textarea>
-            <div className="submit revealTop">
+            <div className="submit">
                 Submit
             </div>
         </div>

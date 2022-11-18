@@ -65,7 +65,7 @@ ul.sidebar.d__flex {
     background-color: var(--bg-color);
     justify-content: center;
     width: 250px;
-    top: 100px;
+    top: 99px;
     flex-direction: column;
     list-style: none;
     z-index: 10;
@@ -206,6 +206,6 @@ li.sideNavbar a:hover::after{
     }
     ul.sidebar.d__flex{
         height: calc(100% - 90px);
-        top: 90px;
+        top: 89px;
     }
 }
