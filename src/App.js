@@ -59,11 +59,11 @@ window.addEventListener("scroll", reveal);
       <Home />
       <About />
       <Project />
+      <Roadmap />
       <Track />
       <Exchanges />
       <Contact />
       <Footer />
-      {/* <Roadmap /> */}
     </div>
   );
 }

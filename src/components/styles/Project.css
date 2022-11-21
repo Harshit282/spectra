@@ -58,7 +58,6 @@ bottom: 0;
 backface-visibility: hidden;
 }
 .front {
-background: linear-gradient(to right, #a246ef, #6523fe);
 background: linear-gradient(to right, rgb(241, 0, 241), #F9004D);
 }
 .front img {
