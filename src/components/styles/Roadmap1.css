@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.roadmap {
+    width: 100vw;
+    display: flex;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    padding: 5vh;
+    overflow-x: hidden;
+}
+.roadmap .roadmap_h1 {
+    color: var(--heading-color);
+    font-size: 5rem;
+    margin: auto;
+    padding: 5vh 0;
+    font-family: "Roboto";
+    margin-bottom: 20vh;
+}
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+}
+.timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    background: #eee;
+}
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 20px;
+    background: linear-gradient(to right, #f100f1, #f9004d);
+    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.timeline ul li div time {
+    position: absolute;
+    background: #f5af19;
+    width: 80px;
+    height: 30px;
+    top: -15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.timeline ul li div div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.timeline ul li div div p {
+    text-align: center;
+}
+.timeline ul li div .discovery {
+    margin-right: 10px;
+}
+.timeline ul li:nth-of-type(odd) > div {
+    left: 45px;
+}
+.timeline ul li:nth-of-type(even) > div {
+    left: -439px;
+}
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+    transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+    transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ------------------Responsiveness---------------- */
+@media (max-width: 1100px) {
+    .roadmap .roadmap_h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .timeline ul li div {
+        width: 250px;
+        flex-direction: column;
+    }
+    .timeline ul li div div {
+        width: 80%;
+        margin: 10px;
+    }
+    .timeline ul li:nth-of-type(even) > div {
+        left: -289px;
+    }
+}
+@media (max-width: 600px) {
+    .roadmap {
+        padding: 5vh 2vh;
+    }
+    .roadmap .roadmap_h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-of-type(even) > div {
+        left: 45px;
+    }
+}

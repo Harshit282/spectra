@@ -9,6 +9,7 @@ import Exchanges from './components/Exchanges';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Roadmap from './components/Roadmap';
+import Roadmap1 from './components/Roadmap1';
 
 function App() {
   function reveal() {
@@ -59,8 +60,9 @@ window.addEventListener("scroll", reveal);
       <Home />
       <About />
       <Project />
-      <Roadmap />
+      {/* <Roadmap1 /> */}
       <Track />
+      <Roadmap />
       <Exchanges />
       <Contact />
       <Footer />

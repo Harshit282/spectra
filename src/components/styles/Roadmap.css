@@ -1,16 +1,15 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
-.roadmap {
+.roadmap1{
     width: 100vw;
     display: flex;
     background-color: var(--bg-color);
     flex-direction: column;
     padding: 5vh;
-    overflow-x: hidden;
 }
-.roadmap .roadmap_h1 {
+.roadmap1 h1{
     color: var(--heading-color);
     font-size: 5rem;
     margin: auto;
@@ -18,119 +17,256 @@
     font-family: "Roboto";
     margin-bottom: 20vh;
 }
-.timeline ul li {
-    list-style-type: none;
-    position: relative;
-    width: 6px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background: #fff;
+/*==================================
+    TIMELINE
+==================================*/
+/*-- GENERAL STYLES
+------------------------------*/
+.timeline {
+line-height: 1.4em;
+list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
 }
-.timeline ul li::after {
-    content: "";
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+line-height: inherit;
+color: var(--hover-color);
+font-family: "Poppins", sans-serif;
+font-size: 1.5rem;
+}
+/*----- TIMELINE ITEM -----*/
+.timeline-item{
+padding-left: 40px;
+position: relative;
+}
+.timeline-item:last-child{
+padding-bottom: 0;
+}
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 3px;
+margin: 0 0 0.5em 0;
+white-space: nowrap;
+color: var(--hover-color);
+font-family: "Poppins", sans-serif;
+}
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 15px;
+color: var(--hover-color);
+}
+.timeline-marker:before {
+background: var(--hover-color);
+border: 3px solid transparent;
+border-radius: 100%;
+content: "";
+display: block;
+height: 15px;
+position: absolute;
+top: 4px;
+left: 0;
+width: 15px;
+transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+content: "";
+width: 3px;
+background: var(--hover-color);
+display: block;
+position: absolute;
+top: 30px;
+bottom: 0;
+left: 8.5px;
+}
+.timeline-item:last-child .timeline-marker:after {
+content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+background: transparent;
+border: 3px solid var(--hover-color);
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+padding-bottom: 40px;
+}
+.timeline-content p:last-child {
+margin-bottom: 0;
+color: var(--text-color);
+font-family: "Poppins", sans-serif;
+}
+
+/*----- TIMELINE PERIOD -----*/
+.period {
+padding: 0;
+}
+.period .timeline-info {
+display: none;
+}
+.period .timeline-marker:before {
+background: transparent;
+content: "";
+width: 15px;
+height: auto;
+border: none;
+border-radius: 0;
+top: 0;
+left: 2.5px;
+bottom: 30px;
+position: absolute;
+border-top: 3px solid var(--hover-color);
+border-bottom: 3px solid var(--hover-color);
+}
+.period .timeline-marker:after {
+content: "";
+height: 32px;
+top: auto;
+}
+.period .timeline-content {
+padding: 40px 0 70px;
+}
+.period .timeline-title {
+margin: 0;
+font-family: "Poppins", sans-serif;
+}
+
+/*----------------------------------------------
+    MOD: TIMELINE SPLIT
+----------------------------------------------*/
+@media (min-width: 768px) {
+.timeline-split .timeline, .timeline-centered .timeline {
+    display: table;
+}
+.timeline-split .timeline-item, .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+}
+.timeline-split .timeline-info, .timeline-centered .timeline-info,
+.timeline-split .timeline-marker,
+.timeline-centered .timeline-marker,
+.timeline-split .timeline-content,
+.timeline-centered .timeline-content,
+.timeline-split .period .timeline-info {
+    display: table-cell;
+    vertical-align: top;
+}
+.timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+    position: relative;
+}
+.timeline-split .timeline-content, .timeline-centered .timeline-content {
+    padding-left: 30px;
+}
+.timeline-split .timeline-info, .timeline-centered .timeline-info {
+    padding-right: 30px;
+}
+.timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+    position: relative;
+    left: -45px;
+}
+}
+
+/*----------------------------------------------
+    MOD: TIMELINE CENTERED
+----------------------------------------------*/
+@media (min-width: 992px) {
+.timeline-centered,
+.timeline-centered .timeline-item,
+.timeline-centered .timeline-info,
+.timeline-centered .timeline-marker,
+.timeline-centered .timeline-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.timeline-centered .timeline-item {
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.timeline-centered .timeline-marker {
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%) rotate(45deg);
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    background: #eee;
+    margin-left: -7.5px;
 }
-.timeline ul li div {
-    position: relative;
-    bottom: 0;
-    width: 400px;
-    padding: 20px;
-    background: linear-gradient(to right, #f100f1, #f9004d);
-    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+.timeline-centered .timeline-info,
+.timeline-centered .timeline-content {
+    width: 50%;
 }
-.timeline ul li div time {
-    position: absolute;
-    background: #f5af19;
-    width: 80px;
-    height: 30px;
-    top: -15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 2px;
+.timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
 }
-.timeline ul li div div {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+.timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
 }
-.timeline ul li div div p {
+.timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+}
+.timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+}
+.timeline-centered > .timeline-item.period .timeline-content {
+    float: none;
+    padding: 0;
+    width: 100%;
     text-align: center;
 }
-.timeline ul li div .discovery {
-    margin-right: 10px;
+.timeline-centered .timeline-item.period {
+    padding: 50px 0 90px;
 }
-.timeline ul li:nth-of-type(odd) > div {
-    left: 45px;
+.timeline-centered .period .timeline-marker:after {
+    height: 30px;
+    bottom: 0;
+    top: auto;
 }
-.timeline ul li:nth-of-type(even) > div {
-    left: -439px;
+.timeline-centered .period .timeline-title {
+    left: auto;
 }
-.timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
 }
-.timeline ul li:nth-of-type(odd) div {
-    transform: translate3d(100px, -10px, 0) rotate(10deg);
+
+/*----------------------------------------------
+    MOD: MARKER OUTLINE
+----------------------------------------------*/
+.marker-outline .timeline-marker:before {
+background: transparent;
+border-color: #FF6B6B;
 }
-.timeline ul li:nth-of-type(even) div {
-    transform: translate3d(-100px, -10px, 0) rotate(10deg);
-}
-.timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
+.marker-outline .timeline-item:hover .timeline-marker:before {
+background: #FF6B6B;
 }
 
 /* ------------------Responsiveness---------------- */
-@media (max-width: 1100px) {
-    .roadmap .roadmap_h1 {
+@media(max-width: 1100px){
+    .roadmap1 h1{
         font-size: 4rem;
     }
 }
-@media screen and (max-width: 900px) {
-    .timeline ul li div {
-        width: 250px;
-        flex-direction: column;
-    }
-    .timeline ul li div div {
-        width: 80%;
-        margin: 10px;
-    }
-    .timeline ul li:nth-of-type(even) > div {
-        left: -289px;
-    }
-}
-@media (max-width: 600px) {
-    .roadmap {
+@media(max-width: 600px){
+    .roadmap1{
         padding: 5vh 2vh;
     }
-    .roadmap .roadmap_h1 {
+    .roadmap1 h1{
         font-size: 2.5rem;
         margin-bottom: 0;
     }
-    .timeline ul li {
-        margin-left: 20px;
+    .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6{
+        font-size: 1.15rem;
     }
-    .timeline ul li div {
-        width: calc(100vw - 91px);
-    }
-    .timeline ul li:nth-of-type(even) > div {
-        left: 45px;
-    }
+    .timeline-content p:last-child {
+        font-size: 0.9rem;
+        }
 }
