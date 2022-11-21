@@ -8,6 +8,7 @@
     background-color: var(--bg-color);
     flex-direction: column;
     padding: 5vh;
+    overflow-x: hidden;
 }
 .roadmap .roadmap_h1{
     color: var(--heading-color);
@@ -16,4 +17,20 @@
     padding: 5vh 0;
     font-family: "Roboto";
     margin-bottom: 20vh;
+}
+
+/* ------------------Responsiveness---------------- */
+@media(max-width: 1100px){
+    .roadmap .roadmap_h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 600px){
+    .roadmap{
+        padding: 5vh 2vh;
+    }
+    .roadmap .roadmap_h1{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
 }
