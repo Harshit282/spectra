@@ -1,6 +1,5 @@
 import React from "react";
 import './styles/Roadmap.css';
-import './styles/Roadmap.scss';
 
 function Roadmap() {
     var items = document.querySelectorAll(".timeline li");
