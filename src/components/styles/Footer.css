@@ -4,6 +4,7 @@
     background-color: var(--secondary-bg-color);
     padding: 5vh;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .footer .topFooter{
     display: flex;
