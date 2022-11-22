@@ -61,7 +61,6 @@ function Header() {
           prevDirection = direction;
         }
       };
-      
       window.addEventListener('scroll', checkScroll);
 
   return (
