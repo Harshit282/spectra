@@ -1,7 +1,7 @@
 .header{
     display: flex;
     background-color: var(--bg-color);
-    padding: 0 0 3vh 5vh;
+    padding: 0 0 24px 40px;
     width: 100vw;
     height: 100px;
     justify-content: space-between;
@@ -13,7 +13,7 @@
     transform: translateY(-100px);
 }
 .header .logo h1, .navbar, .sideNavbar{
-    padding-top: 4vh;
+    padding-top: 30px;
 }
 .header .logo{
     display: flex;
@@ -23,7 +23,7 @@
     height: 67px;
     border-radius: 50%;
     padding-right: 2vh;
-    margin-top: 3vh;
+    margin-top: 24px;
 }
 .header .logo h1{
     font-size: 2rem;
@@ -173,7 +173,7 @@ li.sideNavbar a:hover::after{
 }
 @media(max-width: 1000px){
     .header{
-        padding-right: 5vh;
+        padding-right: 40px;
     }
     .header .navbar .navIcons{
         display: none;
@@ -188,7 +188,7 @@ li.sideNavbar a:hover::after{
 }
 @media(max-width: 920px){
     .header{
-        padding-left: 3vh;
+        padding-left: 24px;
     }
     .header .logo img{
         padding-right: 1vh;
@@ -215,5 +215,10 @@ li.sideNavbar a:hover::after{
     ul.sidebar.d__flex{
         height: calc(100% - 90px);
         top: 89px;
+    }
+}
+@media(min-height: 1950px){
+    .header .logo img{
+        width: 90px;
     }
 }
