@@ -3,12 +3,13 @@ import './styles/Roadmap.css';
 
 function Roadmap1() {
     return (
-        <div className='roadmap1' id='Roadmap'>
+        <div className='roadmap' id='Roadmap'>
             <h1 className='revealTop'>Roadmap</h1>
             <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                 <ul className="timeline timeline-centered">
                     <li className="timeline-item period revealTop">
                         <div className="timeline-info"></div>
+                        <div className="timeline-marker"></div>
                         <div className="timeline-content">
                             <h2 className="timeline-title">2022</h2>
                         </div>

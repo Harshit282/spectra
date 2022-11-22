@@ -1,12 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 .home{
     width: 100vw;
     display: flex;
     padding-bottom: 30vh;
     padding-left: 4vw;
+    overflow-x: hidden;
 }
 .home .heading{
     width: 55%;

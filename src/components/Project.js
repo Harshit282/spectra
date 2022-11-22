@@ -32,7 +32,7 @@ function Project() {
           <div class="card">
             <div class="front">
               <div class="content">
-                <img src="./Images/Sales.svg" alt=''/>
+                <img src="./Images/Tokenomics.svg" alt=''/>
                 <h2>TOKENOMICS</h2>
               </div>
             </div>
@@ -52,7 +52,7 @@ function Project() {
           <div class="card">
             <div class="front">
               <div class="content">
-                <img src="./Images/Sales.svg" alt=''/>
+                <img src="./Images/Taxes.svg" alt=''/>
                 <h2>TAXES</h2>
               </div>
             </div>
@@ -73,7 +73,7 @@ function Project() {
         <div class="card">
           <div class="front">
             <div class="content">
-              <img src="./Images/Sales.svg" alt=''/>
+              <img src="./Images/Core.svg" alt=''/>
               <h2>CORE ADVISORY</h2>
             </div>
           </div>
@@ -94,7 +94,7 @@ function Project() {
         <div class="card">
           <div class="front">
             <div class="content">
-              <img src="./Images/Sales.svg" alt=''/>
+              <img src="./Images/More.svg" alt=''/>
               <h2>MORE INFO</h2>
             </div>
           </div>
