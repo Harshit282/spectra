@@ -85,12 +85,18 @@ background-color: #28253a;
 transform: rotateX(180deg);
 }
 .container:hover .card {
+transition-delay: 0.25s;
 transform: rotateX(180deg);
 }
 /* -----------------Responsiveness------------------ */
 @media(max-width: 1100px){
     .project h1{
         font-size: 4rem;
+    }
+}
+@media(min-width: 1000px){
+    .project{
+        overflow-x: hidden;
     }
 }
 @media(max-width: 600px){

@@ -260,6 +260,11 @@ background: #FF6B6B;
         font-size: 4rem;
     }
 }
+@media(min-width: 1000px){
+    .roadmap{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 600px){
     .roadmap{
         padding: 5vh 2vh;

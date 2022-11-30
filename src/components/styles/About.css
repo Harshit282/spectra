@@ -114,6 +114,11 @@ a.bottom__to__top.active{
         margin-bottom: 20px;
     }
 }
+@media(min-width: 1000px){
+    .about{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 700px){
     .about .firstInfo{
         flex-direction: column;

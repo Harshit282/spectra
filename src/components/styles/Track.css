@@ -83,6 +83,11 @@
         margin-left: 20vw;
     }
 }
+@media(min-width: 1000px){
+    .track{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 900px){
     .track .trackBSCScan, .trackCMC, .trackCGK{
         width: 30vw;

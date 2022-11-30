@@ -69,6 +69,11 @@
     color: hsla(0,0%,100%,.6)
 }
 /* ------------------Responsiveness------------------- */
+@media(min-width: 1000px){
+    .contact{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 800px){
     .contact .inputBox{
         max-width: 100%;

@@ -11,7 +11,7 @@ function Roadmap1() {
                         <div className="timeline-info"></div>
                         <div className="timeline-marker"></div>
                         <div className="timeline-content">
-                            <h2 className="timeline-title">2022</h2>
+                            <h2 className="timeline-title">2023</h2>
                         </div>
                     </li>
                     <li></li>

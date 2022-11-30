@@ -172,6 +172,11 @@ li.sideNavbar a:hover::after{
         margin-right: 1.5rem;
     }
 }
+@media(min-width: 1000px){
+    .header{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 1000px){
     .header{
         padding-right: 40px;

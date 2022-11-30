@@ -69,6 +69,11 @@
         font-size: 4rem;
     }
 }
+@media(min-width: 1000px){
+    .exchanges{
+        overflow-x: hidden;
+    }
+}
 /* ------------------------------------------------- media queries ----------------------------------------------------- */
 @media ( max-width: 900px ) {
     .slick-prev{

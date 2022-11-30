@@ -63,6 +63,11 @@
     font-family: "Roboto";
 }
 /* --------------Responsiveness---------------- */
+@media(min-width: 1000px){
+    .footer{
+        overflow-x: hidden;
+    }
+}
 @media(max-width: 1000px){
     .footer .leftFooter .logocontent .logo img{
         height: 67px;
