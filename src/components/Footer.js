@@ -26,7 +26,7 @@ function Footer() {
                     <a href='https://www.twitter.com'><i class="fa-brands fa-twitter"></i></a>
         </div>
         <hr />
-        <p>	&#169; Spectra Labs all Rights Reserved.</p>
+        <p>	&#169; Spectra Labs all rights reserved.</p>
     </div>  
   )
 }

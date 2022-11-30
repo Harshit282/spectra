@@ -4,7 +4,6 @@
     background-color: var(--bg-color);
     flex-direction: column;
     padding: 5vh;
-    overflow-x: hidden;
 }
 .roadmap h1{
     color: var(--heading-color);
@@ -171,6 +170,9 @@ font-family: "Poppins", sans-serif;
     position: relative;
     left: -45px;
 }
+li:first-of-type.period{
+    left: 78px;
+}
 }
 
 /*----------------------------------------------
@@ -235,6 +237,9 @@ font-family: "Poppins", sans-serif;
 }
 .timeline-centered .period .timeline-title {
     left: auto;
+}
+li:first-of-type.period{
+    left: 0;
 }
 }
 

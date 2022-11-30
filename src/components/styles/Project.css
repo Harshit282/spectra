@@ -3,7 +3,6 @@
     display: flex;
     background-color: var(--bg-color);
     flex-direction: column;
-    overflow-x: hidden;
     padding: 5vh;
     background-image: url(../../../public/Images/world\ map.png);
     background-size: cover;

@@ -3,11 +3,11 @@ import React from "react";
 import "./styles/About.css";
 
 function About() {
-    //  Up To Top Btn
-    window.addEventListener("scroll", function(){
-        const upToTop = document.querySelector("a.bottom__to__top");
-          upToTop.classList.toggle("active", window.scrollY > 0)
-      });
+  //  Up To Top Btn
+  window.addEventListener("scroll", function () {
+    const upToTop = document.querySelector("a.bottom__to__top");
+    upToTop.classList.toggle("active", window.scrollY > 0);
+  });
   return (
     <div className="about" id="About">
       <div className="mainAbout">
@@ -22,25 +22,28 @@ function About() {
       <div className="firstInfo revealLeft">
         <h1>Spectra Seed Round Pitchdeck</h1>
         <p>
-          Spectra labs is an Incubation and Marketing based project, having it's
-          main token being 'SPECTRA' with a very clever buy back function.
-          Launching on the Binance Smart Chain. Spectra LAbs will run marketing
-          campaigns through all social medias and varrious proven sources for
-          top projects, with all proceeds being used to make regular buybacks.
-          Doing this we will be constantly spreading awareness for our own
-          projectand also get new eyes on our project from any collaborations.
-          Spectra labs already has a huge network of influencers and top notch
-          marketing experts.
+          $SPEC is the utility token of SpectraLabs, a new incubator project on
+          the Ethereum network. SpectraLabs is a full service incubator that
+          will help promote some of the top projects. SpectraLabs will run
+          marketing campaigns through all social medias and various proven
+          sources for top projects, with all proceeds bring used to make regular
+          buybacks. SpectraLabs already has a huge network of influencersand
+          marketing experts on board.
+          <br />
+          <br />
+          We make the crypto space safer by promoting and helping only the best
+          and safest projects within the space and working only with the best
+          and safest/doxxed teams.
         </p>
       </div>
       <div className="firstInfo reverse revealRight">
         <p>
-          When projects would see the effective marketing done by Spectra Labs
-          and the good word spreads over the space, Spectra Labs would be doing
-          marketing campaigns for top projects as well as the fairly new ones.
-          Roughly 10% of the total marketing campaigns cost would go straight
-          into buying Spectra. As the number of campaigns increase the buybacks
-          would increase and hence driving the price of Spectra Up.
+          Spectra Labs will be running various marketing campaigns and offering
+          different marketing packages for the upcoming projects in the space.
+          Roughly 10% of the total amrketing campaign costs would go straight
+          into buybacks for $SPEC. As the number of campaigns increase, the
+          buybacks would increase and hence driving the price and volume of
+          $SPEC up.
         </p>
         <h1>Buybacks Explained</h1>
       </div>

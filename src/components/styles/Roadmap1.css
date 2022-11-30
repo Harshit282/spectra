@@ -1,4 +1,4 @@
-.roadmap {
+.roadmap1 {
     width: 100vw;
     display: flex;
     background-color: var(--bg-color);
@@ -6,7 +6,7 @@
     padding: 5vh;
     overflow-x: hidden;
 }
-.roadmap .roadmap_h1 {
+.roadmap1 .roadmap1_h1 {
     color: var(--heading-color);
     font-size: 5rem;
     margin: auto;

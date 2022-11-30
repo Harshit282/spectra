@@ -31,8 +31,8 @@ window.addEventListener("scroll", callbackFunc);
 
 
     return (
-        <div className="roadmap" id="Roadmap1">
-            <h1 className='revealTop roadmap_h1'>Roadmap</h1>
+        <div className="roadmap1" id="Roadmap1">
+            <h1 className='revealTop roadmap1_h1'>Roadmap</h1>
             <section class="timeline">
       <ul>
         <li>
