@@ -55,7 +55,7 @@
 /* ------------------------------------------------- quote ----------------------------------------------------- */
 .homecontent{
     width: 859px;
-    padding: 1rem 1rem 1rem 14vw;
+    padding: 1rem 1rem 1rem 33vw;
     color: var(--input-color);
     animation: zoomIn;
     animation-duration: 1s;
@@ -104,7 +104,7 @@
     }
     .homecontent{
         width: 550px;
-        padding-left: 12vw;
+        padding-left: 33vw;
     }
 }
 
@@ -132,7 +132,7 @@
     }
     .homecontent{
         width: 450px;
-        padding-left: 10vw;
+        padding-left: 33vw;
         margin-top: 29vh;
     }
 }
