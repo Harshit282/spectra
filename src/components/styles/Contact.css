@@ -1,6 +1,6 @@
 .contact{
     background-color: var(--bg-color);
-    padding: 5vh;
+    padding: 35px;
     width: 100vw;
     background-image: url(../../../public/Images/worldmap2.png);
     background-size: cover;
@@ -9,7 +9,7 @@
 }
 .contact h1{
     font-size: 3rem;
-    padding: 3vh 0;
+    padding: 20px 0;
     color: var(--heading-color);
     font-family: 'Roboto';
 }
@@ -54,7 +54,7 @@
     color: rgba(255, 255, 255, 0.712);
     width: 7.5rem;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 35px;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
 }
@@ -80,7 +80,7 @@
     }
     .contact .inputBox .submit{
         margin: auto;
-        margin-top: 5vh;
+        margin-top: 35px;
     }
 }
 @media(max-width: 400px){

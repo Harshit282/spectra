@@ -3,16 +3,16 @@
     display: flex;
     background-color: var(--bg-color);
     flex-direction: column;
-    padding: 5vh;
+    padding: 35px;
     overflow-x: hidden;
 }
 .exchanges h1{
     color: var(--heading-color);
     font-size: 5rem;
     margin: auto;
-    padding: 5vh 0;
+    padding: 35px 0;
     font-family: "Roboto";
-    margin-bottom: 20vh;
+    margin-bottom: 160px;
 }
 .dots{
     bottom: 20px !important;
@@ -55,7 +55,7 @@
 /* ------------------------------------------------- quote ----------------------------------------------------- */
 .homecontent{
     width: 859px;
-    padding: 1rem 1rem 1rem 33vw;
+    padding: 1rem 1rem 1rem 32vw;
     color: var(--input-color);
     animation: zoomIn;
     animation-duration: 1s;
@@ -106,15 +106,18 @@
         width: 550px;
         padding-left: 33vw;
     }
+    .exchanges h1{
+        margin-bottom: 100px;
+    }
 }
 
 @media(max-width: 600px){
     .exchanges{
-        padding: 5vh 2vh;
+        padding: 35px 15px;
     }
     .exchanges h1{
         font-size: 2.5rem;
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 }
 
@@ -132,7 +135,14 @@
     }
     .homecontent{
         width: 450px;
-        padding-left: 33vw;
-        margin-top: 29vh;
+        padding-left: 32vw;
+    }
+}
+@media ( max-width: 400px ) {
+    .homecontent{
+        margin-top: 1rem;
+    }
+    .exchanges h1{
+        margin-bottom: 30px;
     }
 }

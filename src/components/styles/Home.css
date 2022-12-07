@@ -1,7 +1,7 @@
 .home{
     width: 100vw;
     display: flex;
-    padding-bottom: 30vh;
+    padding-bottom: 240px;
     padding-left: 4vw;
     overflow-x: hidden;
 }
@@ -9,7 +9,7 @@
     width: 55%;
 }
 .home .imageDiv{
-    margin-top: 20vh;
+    margin-top: 150px;
     background-image: url("../../../public/Images/mockup.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 }
 .home .heading h1{
     font-size: 5rem;
-    padding: 40vh 0 2vh 0;
+    padding: 300px 0 15px 0;
     font-family: 'Roboto';
     color: var(--logo-color);
 }
@@ -35,7 +35,7 @@
     border-radius: 35px;
     width: 30rem;
     font-family: "Poppins",sans-serif;
-    margin-top: 5vh;
+    margin-top: 35px;
     text-align: center;
     border: 2px solid #fff;
 }
@@ -57,7 +57,7 @@
 /* ----------------------Responsiveness--------------------- */
 @media(max-width: 1050px){
     .home .imageDiv{
-        margin-top: 30vh;
+        margin-top: 240px;
     }
     .home{
         padding-bottom: 100px;
@@ -71,7 +71,7 @@
 @media(max-width: 920px){
     .home{
         flex-direction: column;
-        padding-bottom: 5vh;
+        padding-bottom: 35px;
     }
     .home .heading h1, .home .heading p{
         width: 90vw;
@@ -90,17 +90,17 @@
         width: 100%;
     }
     .home .heading h1{
-        padding: 30vh 5vh 0 0;
+        padding: 240px 35px 0 0;
     }
 }
 @media(max-width: 500px){
     .home .heading h1{
         font-size: 3.75rem;
-        padding-left: 2.5vh;
+        padding-left: 18px;
     }
     .home .heading p{
         font-size: 2rem;
-        padding-left: 2.5vh;
+        padding-left: 18px;
     }
     .home .contract, .buyNow{
         width: 90%;

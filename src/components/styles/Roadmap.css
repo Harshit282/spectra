@@ -3,15 +3,15 @@
     display: flex;
     background-color: var(--bg-color);
     flex-direction: column;
-    padding: 5vh;
+    padding: 35px;
 }
 .roadmap h1{
     color: var(--heading-color);
     font-size: 5rem;
     margin: auto;
-    padding: 5vh 0;
+    padding: 35px 0;
     font-family: "Roboto";
-    margin-bottom: 20vh;
+    margin-bottom: 70px;
 }
 /*==================================
     TIMELINE
@@ -267,7 +267,7 @@ background: #FF6B6B;
 }
 @media(max-width: 600px){
     .roadmap{
-        padding: 5vh 2vh;
+        padding: 35px 15px;
     }
     .roadmap h1{
         font-size: 2.5rem;
